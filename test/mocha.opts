@@ -1,0 +1,4 @@
+ --require babel-register
+ --require babel-polyfill
+ --timeout 1500
+src/**/*.spec.js
