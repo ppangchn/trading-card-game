@@ -36,10 +36,8 @@ export function getCardDamage(player, cardIndex) {
 	return player.cards[cardIndex];
 }
 export function attack(player, cardIndex, opponent) {
-	console.log('opponent', opponent);
 	const damage = getCardDamage(player, cardIndex);
 	opponent['hp'] -= damage;
-	console.log('hp', opponent.hp);
 	isDead(player, opponent);
 }
 export function isDead(player, opponent) {
